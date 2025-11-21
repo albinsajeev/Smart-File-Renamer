@@ -3,6 +3,14 @@
 
 python batch-rename file-management automation regex tkinter windows-tool cleaner
 
+"We've all had folders full of files with inconsistent names like 1. Intro.mp4, 10. Summary.mp4, and 001_001_Chapter1.mp4. Windows often sorts these incorrectly (placing '10' before '2'), making it frustrating to view them in order.
+
+Smart File Renamer solves this by automatically detecting the 'real' name of the file using Regex. It strips away messy prefixes, redundant numbers, and symbols, then applies a clean, zero-padded sequence (001_Name.ext, 002_Name.ext).
+
+This ensures your files are always perfectly sorted and easy to read, without losing their original descriptive names."
+
+
+
 \# Smart File Renamer
 
 
