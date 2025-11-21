@@ -1,93 +1,39 @@
-# Smart-File-Renamer
-"Windows GUI tool for automated batch renaming. Features regex-based string cleaning, conflict detection, and smart sequential numbering."
+# 🏷️ Smart File Renamer
 
-python batch-rename file-management automation regex tkinter windows-tool cleaner
+<div align="center">
 
-"We've all had folders full of files with inconsistent names like 1. Intro.mp4, 10. Summary.mp4, and 001_001_Chapter1.mp4. Windows often sorts these incorrectly (placing '10' before '2'), making it frustrating to view them in order.
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square&logo=windows)
+![Language](https://img.shields.io/badge/Language-Python-3776AB?style=flat-square&logo=python)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-Smart File Renamer solves this by automatically detecting the 'real' name of the file using Regex. It strips away messy prefixes, redundant numbers, and symbols, then applies a clean, zero-padded sequence (001_Name.ext, 002_Name.ext).
+**Created by [Albin Sajeev](https://github.com/albinsajeev)**
 
-This ensures your files are always perfectly sorted and easy to read, without losing their original descriptive names."
+> **Clean messy filenames and organize them into a perfect sequence (001, 002...) automatically.**
 
+[⬇️ **Download Latest App (v1.0)**](https://github.com/albinsajeev/Smart-File-Renamer/releases)
 
-
-\# Smart File Renamer
-
-
-
-!\[Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=flat-square\&logo=windows)
-
-!\[Language](https://img.shields.io/badge/Language-Python-3776AB?style=flat-square\&logo=python)
-
-!\[License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-
-
-
-\*\*Created by \[Albin Sajeev](https://github.com/albinsajeev)\*\*
-
-
-
-> \*\*Clean messy filenames and organize them into a perfect sequence (001, 002...) automatically.\*\*
-
-
+</div>
 
 ---
 
+## 🧐 The Problem
+We've all downloaded courses or file collections that look like a mess. Windows often sorts them incorrectly because it treats numbers as text (placing "10" before "2"), making it frustrating to view files in the correct order.
 
+## 💡 The Solution
+**Smart File Renamer** is a Windows GUI tool that intelligently cleans filenames. It uses **Regex** to detect the "real" name of the file, strips away junk prefixes, and applies a clean, zero-padded numbering system.
 
-\## 🧐 The Problem
+### **See the Difference**
 
-Files often come with inconsistent naming conventions, leading to sorting issues:
-
-\* `1. Intro.mp4`
-
-\* `10. Conclusion.mp4` (Gets sorted before 2)
-
-\* `001\_001\_Chapter1.mp4` (Redundant numbers)
-
-
-
-\## 💡 The Solution
-
-\*\*Smart File Renamer\*\* scans a folder, identifies the "Real Name" of the file using Regex, strips away the junk prefixes, and applies a clean, zero-padded numbering system (`001\_Name.ext`).
-
-
+| ❌ Messy (Before) | ✅ Cleaned (After) |
+| :--- | :--- |
+| `1. Introduction.mp4` | `001_Introduction.mp4` |
+| `10. Summary.mp4` | `010_Summary.mp4` |
+| `001_001_Chapter 1.mp4` | `001_Chapter 1.mp4` |
+| `2 - Setup Guide.pdf` | `002_Setup Guide.pdf` |
 
 ---
 
+## 🚀 Key Features
 
-
-\## 🚀 Features
-
-\* \*\*Regex Cleaning:\*\* Automatically removes messy prefixes like `001\_001\_`, `1. `, or `1 - `.
-
-\* \*\*Smart Sequencing:\*\* Renumbers files as `001`, `002`, `003`... ensuring correct sorting in Windows Explorer.
-
-\* \*\*Safe Rename:\*\* Checks for file conflicts before renaming to prevent data loss.
-
-\* \*\*Long Path Support:\*\* Handles Windows file paths longer than 260 characters.
-
-
-
----
-
-
-
-\## 📥 Download
-
-\[\*\*Download the latest App (v1.0)\*\*](https://github.com/albinsajeev/Smart-File-Renamer/releases)
-
-
-
----
-
-
-
-\## 🛠 Build from Source
-
-```bash
-
-pip install pyinstaller
-
-python -m PyInstaller --onefile --noconsole --name "Smart File Renamer" smart\_renamer.py
-
+### 🧹 Regex-Based Cleaning
+Automatically identifies and removes messy prefixes like `0
